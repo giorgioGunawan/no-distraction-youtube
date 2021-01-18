@@ -14,6 +14,8 @@ class SearchBar extends React.Component {
         e.preventDefault(); // when we submit, the page DO NOT REFRESH
         // todo: make sure we call callbacks
         // from parent component
+        this.props.onTermSubmit(this.state.term);
+
     }
     render() {
         return(
